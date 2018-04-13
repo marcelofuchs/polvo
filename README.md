@@ -5,6 +5,9 @@
 ## Desafio Desenvolvedor Wordpress - Grupo Polvo
 https://github.com/aline-matos/polvo/tree/wp-dev-challenge
 
+## Desafio Desenvolvedor Magento - Grupo Polvo
+https://github.com/aline-matos/polvo/tree/magento-challenge
+
 ## Desafio Desenvolvedor Back-End - Grupo Polvo
 https://github.com/aline-matos/polvo/tree/php-dev-challenge
 
