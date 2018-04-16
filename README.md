@@ -15,7 +15,7 @@ https://github.com/aline-matos/polvo/tree/php-dev-challenge
 https://www.figma.com/file/E9nCB9jXkJKBLH71ljdnZ80k/Desafio-Desenvolvedor-Front-End---Grupo-Polvo
 
 ## Desafio Estágio Front-End - Grupo Polvo
-https://github.com/aline-matos/polvo/tree/trainee-front-challenge
+https://www.figma.com/file/E9nCB9jXkJKBLH71ljdnZ80k/Desafio-Desenvolvedor-Front-End---Grupo-Polvo
 
 ## Dúvidas?
 
