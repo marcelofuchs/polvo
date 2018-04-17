@@ -1,21 +1,29 @@
 # Polvo
 
-Área de desafios com o objetivo de encontrar novos talentos que gostariam de fazer parte do nosso time.
+Desafio Estágio Backend - Grupo Polvo
 
-## Desafio Desenvolvedor Wordpress - Grupo Polvo
-https://github.com/aline-matos/polvo/tree/wp-dev-challenge
+Desenvolvimento de um CRUD de cadastro de usuários e cadastro de posts em PHP e MySQL
 
-## Desafio Desenvolvedor Magento - Grupo Polvo
-https://github.com/aline-matos/polvo/tree/magento-challenge
+## Deverá conter
 
-## Desafio Desenvolvedor Back-End - Grupo Polvo
-https://github.com/aline-matos/polvo/tree/php-dev-challenge
+- **Usuário**: ID, Nome, E-mail, CPF
 
-## Desafio Desenvolvedor Front-End - Grupo Polvo
-https://www.figma.com/file/E9nCB9jXkJKBLH71ljdnZ80k/Desafio-Desenvolvedor-Front-End---Grupo-Polvo
+- **Post**: ID, Título, Autor, Data de publicação, Conteúdo
 
-## Desafio Estágio Front-End - Grupo Polvo
-https://www.figma.com/file/E9nCB9jXkJKBLH71ljdnZ80k/Desafio-Desenvolvedor-Front-End---Grupo-Polvo
+- Retornar os dados em formato **JSON**
+
+## Instruções
+
+1. Faça um fork do projeto para sua conta pessoal
+2. Crie uma branch com o padrão: `treinee-backend-challenge`
+3. Coloque seu teste dentro do diretório **[/treinee-backend-challenge/seu-nome](https://github.com/aline-matos/polvo/tree/treinee-backend-challenge)** 
+4. Utilize o seu nome para a pasta principal do projeto
+5. Submeta seu código criando um [Pull Request](https://github.com/aline-matos/polvo/compare/master...treinee-backend-challenge) para `treinee-backend-challenge/`
+
+## Você pode
+
+- Utilizar qualquer Framework PHP. Caso opte por não utilizar, desenvolver nos padrões de projeto MVC. Ficaremos bem felizes se você utilizar Laravel ;)
+- Utilizar composer
 
 ## Dúvidas?
 
