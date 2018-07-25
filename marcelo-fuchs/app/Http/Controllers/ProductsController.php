@@ -36,8 +36,8 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        $posts = $this->product->paginate(5);
-        return view('products.index',compact('posts'));
+        $products = $this->product->paginate(5);
+        return view('products.index',compact('products'));
     }
 
     /**
@@ -62,8 +62,8 @@ class ProductsController extends Controller
      */
     public function store(ProductsRequest $request)
     {
-        $post = $this->product->create($request->all());
-        $post->tags()->sync($this->getTagList($request->tags));
+        $product = $this->product->create($request->all());
+        $product->tags()->sync($this->getTagList($request->tags));
 
         return redirect()->route('products.index');
     }
@@ -78,7 +78,7 @@ class ProductsController extends Controller
      */
     public function edit($id)
     {
-        $post=$this->product->find($id);
+        $product=$this->product->find($id);
         return view('products.edit', compact('post'));
     }
 
@@ -92,8 +92,8 @@ class ProductsController extends Controller
     public function update($id, ProductsRequest $request)
     {
         $this->product->find($id)->update($request->all());
-        $post=$this->product->find($id);
-        $post->tags()->sync($this->getTagList($request->tags));
+        $product=$this->product->find($id);
+        $product->tags()->sync($this->getTagList($request->tags));
 
         return redirect()->route('products.index');
     }
