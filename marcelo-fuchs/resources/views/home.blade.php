@@ -11,7 +11,9 @@
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
-                    @endif                  
+                    @endif     
+                    
+                    <a href="/product" class="btn btn-primary">Cadastro de Produtos</a>
                 </div>
             </div>
         </div>

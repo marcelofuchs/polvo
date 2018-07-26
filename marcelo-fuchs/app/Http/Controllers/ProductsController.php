@@ -13,7 +13,6 @@ use App\Products;
  */
 class ProductsController extends Controller
 {
-
     /**
      * @var Products
      */
@@ -63,9 +62,7 @@ class ProductsController extends Controller
     public function store(ProductsRequest $request)
     {
         $product = $this->product->create($request->all());
-        $product->tags()->sync($this->getTagList($request->tags));
-
-        return redirect()->route('products.index');
+        return redirect()->route('product.index');
     }
 
     /**
@@ -79,7 +76,7 @@ class ProductsController extends Controller
     public function edit($id)
     {
         $product=$this->product->find($id);
-        return view('products.edit', compact('post'));
+        return view('products.edit', compact('product'));
     }
 
     /**
@@ -92,10 +89,7 @@ class ProductsController extends Controller
     public function update($id, ProductsRequest $request)
     {
         $this->product->find($id)->update($request->all());
-        $product=$this->product->find($id);
-        $product->tags()->sync($this->getTagList($request->tags));
-
-        return redirect()->route('products.index');
+        return redirect()->route('product.index');
     }
 
     /**
@@ -109,6 +103,6 @@ class ProductsController extends Controller
     public function destroy($id)
     {
         $this->product->find($id)->delete();
-        return redirect()->route('products.index');
+        return redirect()->route('product.index');
     }
 }

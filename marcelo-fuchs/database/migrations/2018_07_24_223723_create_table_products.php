@@ -16,7 +16,7 @@ class CreateTableProducts extends Migration {
             $table->bigIncrements('id');
             $table->string("sku", 100);
             $table->string("name", 100);
-            $table->text("desciption");
+            $table->text("description");
             $table->decimal("price");
             $table->timestamps();
         });

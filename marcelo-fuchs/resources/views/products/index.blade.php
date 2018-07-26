@@ -17,6 +17,7 @@
                             <th>Nome</th>
                             <th>Preço</th>
                             <th>Descricao</th>
+                            <th>Ações</th>
                         </tr>
                         @foreach($products as $product)
                         <tr>
@@ -26,7 +27,7 @@
                             <td>{{$product->price}}</td>
                             <td>{{$product->description}}</td>
                             <td>
-                                <a href="{{route('product.edit',['id'=>$product->id])}}" class="btn btn-default">Editar</a>
+                                <a href="{{route('product.edit',['id'=>$product->id])}}" class="btn btn-success">Editar</a>
                                 <a href="{{route('product.destroy',['id'=>$product->id])}}" class="btn btn-danger">Excluir</a>
                             </td>
                         </tr>
